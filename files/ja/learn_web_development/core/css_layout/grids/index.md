@@ -7,7 +7,7 @@ l10n:
 
 {{LearnSidebar}}
 
-{{PreviousMenuNext("Learn_web_development/Core/CSS_layout/Flexbox", "Learn_web_development/Core/CSS_layout/Responsive_design", "Learn_web_development/Core/CSS_layout")}}
+{{PreviousMenuNext("Learn_web_development/Core/CSS_layout/Flexbox", "Learn_web_development/Core/CSS_layout/Responsive_Design", "Learn_web_development/Core/CSS_layout")}}
 
 CSS グリッドレイアウト (Grid Layout) は、ウェブ用の 2 次元レイアウトシステムです。 コンテンツを行と列に整理することができ、複雑なレイアウトの作成を簡素化する多くの機能を提供します。この記事では、グリッドレイアウトを始めるに当たって知っておくべきことをすべて説明します。
 
@@ -114,7 +114,7 @@ body {
 
 ### fr 単位を使用した柔軟なグリッド
 
-長さとパーセントを使用してグリッドを作成するだけでなく、 [`fr`](/ja/docs/Web/CSS/flex_value) 単位を使用して柔軟にグリッドの行と列のサイズを変更できます。 この単位は、グリッドコンテナー内の使用可能な空間の割合を表します。
+長さとパーセントを使用してグリッドを作成するだけでなく、 [`fr`](/ja/docs/Web/CSS/Reference/Values/flex_value) 単位を使用して柔軟にグリッドの行と列のサイズを変更できます。 この単位は、グリッドコンテナー内の使用可能な空間の割合を表します。
 
 トラックのリストを次の定義に変更し、 `1fr` のトラックを 3 つ作成します。
 
@@ -169,7 +169,8 @@ body {
 
 {{ EmbedLiveSample('Flexible_grids_with_the_fr_unit', '100%', 200) }}
 
-> **メモ:** `fr` 単位は、*すべて*の空間ではなく、*使用可能*な空間を分配します。そのため、トラックの中に何か大きなものがある場合、共有できる自由空間は少なくなります。
+> [!NOTE]
+> `fr` 単位は、*すべて*の空間ではなく、*使用可能*な空間を分配します。そのため、トラックの中に何か大きなものがある場合、共有できる自由空間は少なくなります。
 
 ### トラックの間隔
 
@@ -358,7 +359,7 @@ body {
 
 ## 線に基づいた配置
 
-ここで、グリッドの作成からグリッドへの配置に移ります。グリッドには常に線があります。これらは 1 から始まり、文書の[書字方向](/ja/docs/Web/CSS/CSS_writing_modes)に関連しています。例えば、英語（左書き）の場合、列線 1 はグリッドの左端であり、行線 1 はグリッドの上端となり、アラビア語（右書き）の場合、列線 1 は右端になります。
+ここで、グリッドの作成からグリッドへの配置に移ります。グリッドには常に線があります。これらは 1 から始まり、文書の[書字方向](/ja/docs/Web/CSS/Guides/Writing_modes)に関連しています。例えば、英語（左書き）の場合、列線 1 はグリッドの左端であり、行線 1 はグリッドの上端となり、アラビア語（右書き）の場合、列線 1 は右端になります。
 
 これらの線に沿ってアイテムを配置するには、アイテムを配置するグリッド領域の開始線と終了線を指定します。このために使用することができる 4 つのプロパティがあります。
 
@@ -584,7 +585,7 @@ aside {
 
 ## 入れ子のグリッドとサブグリッド
 
-グリッドを別のグリッドの中に入れ子にして、[サブグリッド](/ja/docs/Web/CSS/CSS_grid_layout/Subgrid)を作成することが可能です。
+グリッドを別のグリッドの中に入れ子にして、[サブグリッド](/ja/docs/Web/CSS/Guides/Grid_layout/Subgrid)を作成することが可能です。
 これを行うには、グリッドアイテムに `display: grid` プロパティを設定します。
 
 記事のコンテナーを追加し、入れ子のグリッドを使用して複数の記事のレイアウトを制御することで、前回の例を展開してみましょう。
@@ -875,7 +876,7 @@ aside {
 
 ## スキルテスト
 
-この記事の最後に達しましたが、最も大切な情報を覚えていますか？次に進む前に、この情報が身に付いたかどうかを確認するテストがあります。[スキルテスト: グリッド](/ja/docs/Learn_web_development/Core/CSS_layout/Grid_skills) を見てください。
+この記事の最後に達しましたが、最も大切な情報を覚えていますか？次に進む前に、この情報が身に付いたかどうかを確認するテストがあります。[スキルテスト: グリッド](/ja/docs/Learn_web_development/Core/CSS_layout/Test_your_skills/Grid) を見てください。
 
 ## まとめ
 
@@ -883,11 +884,11 @@ aside {
 
 ## 関連情報
 
-- [CSS グリッドレイアウト](/ja/docs/Web/CSS/CSS_grid_layout#ガイド)
+- [CSS グリッドレイアウト](/ja/docs/Web/CSS/Guides/Grid_layout#ガイド)
   - : CSS グリッドレイアウトモジュールのメインページで、多数の追加リソースを格納しています。
 - [A complete guide to CSS grid](https://css-tricks.com/snippets/css/complete-guide-grid/)（英語）
   - : 視覚的なガイド（CSS-Tricks、2023）
 - [Grid Garden](https://cssgridgarden.com/)（英語）
   - : グリッドの基本を学び、より理解を深めるための教育用ゲームです。
 
-{{PreviousMenuNext("Learn_web_development/Core/CSS_layout/Flexbox", "Learn_web_development/Core/CSS_layout/Responsive_design", "Learn_web_development/Core/CSS_layout")}}
+{{PreviousMenuNext("Learn_web_development/Core/CSS_layout/Flexbox", "Learn_web_development/Core/CSS_layout/Responsive_Design", "Learn_web_development/Core/CSS_layout")}}
